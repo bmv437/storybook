@@ -15,6 +15,10 @@ const valueStyles = {
     color: '#666',
   },
 
+  component: {
+    color: '#666',
+  },
+
   array: {
     color: '#666',
   },
@@ -93,7 +97,11 @@ export default function PropVal(props) {
   } else if (Array.isArray(val)) {
     content = previewArray(val, maxPropArrayLength);
   } else if (typeof val === 'function') {
-    content = <span style={valueStyles.func}>{val.name ? `${val.name}()` : 'anonymous()'}</span>;
+    if (val.prototype.isReactComponent) {
+      content = <span style={valueStyles.component}>{val.name ? val.name : 'Component'}</span>;
+    } else {
+      content = <span style={valueStyles.func}>{val.name ? `${val.name}()` : 'anonymous()'}</span>;
+    }
   } else if (!val) {
     content = <span style={valueStyles.empty}>{`${val}`}</span>;
   } else if (typeof val !== 'object') {
