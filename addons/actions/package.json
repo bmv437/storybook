@@ -1,6 +1,6 @@
 {
   "name": "@storybook/addon-actions",
-  "version": "3.2.11",
+  "version": "3.2.12",
   "description": "Action Logger addon for storybook",
   "keywords": [
     "storybook"
@@ -17,21 +17,21 @@
   },
   "scripts": {
     "deploy-storybook": "storybook-to-ghpages",
-    "prepublish": "node ../../scripts/prepublish.js",
+    "prepare": "node ../../scripts/prepare.js",
     "storybook": "start-storybook -p 9001"
   },
   "dependencies": {
-    "@storybook/addons": "^3.2.10",
+    "@storybook/addons": "^3.2.12",
     "deep-equal": "^1.0.1",
     "json-stringify-safe": "^5.0.1",
-    "prop-types": "^15.5.10",
-    "react-inspector": "^2.1.6",
+    "prop-types": "^15.6.0",
+    "react-inspector": "^2.2.0",
     "uuid": "^3.1.0"
   },
   "devDependencies": {
-    "react": "^15.6.1",
-    "react-dom": "^15.6.1",
-    "react-test-renderer": "^15.6.1",
+    "react": "^16.0.0",
+    "react-dom": "^16.0.0",
+    "react-test-renderer": "^16.0.0",
     "shelljs": "^0.7.8"
   },
   "peerDependencies": {

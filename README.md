@@ -1,6 +1,5 @@
 # Storybook
 
-[![Greenkeeper badge](https://badges.greenkeeper.io/storybooks/storybook.svg)](https://greenkeeper.io/)
 [![Build Status on CircleCI](https://circleci.com/gh/storybooks/storybook.svg?style=shield)](https://circleci.com/gh/storybooks/storybook)
 [![CodeFactor](https://www.codefactor.io/repository/github/storybooks/storybook/badge)](https://www.codefactor.io/repository/github/storybooks/storybook)
 [![Known Vulnerabilities](https://snyk.io/test/github/storybooks/storybook/8f36abfd6697e58cd76df3526b52e4b9dc894847/badge.svg)](https://snyk.io/test/github/storybooks/storybook/8f36abfd6697e58cd76df3526b52e4b9dc894847)
@@ -64,6 +63,7 @@ For full documentation on using Storybook visit: [storybook.js.org](https://stor
 ### Main Projects
 
 -   [Storybook for react](app/react) - Storybook for React components
+-   [Storybook for vue](app/vue) - Storybook for Vue components
 -   [Storybook for react-native](app/react-native) - Storybook for React components
 
 ### Sub Projects
@@ -92,30 +92,29 @@ We welcome contributions to Storybook!
 
 ### Development scripts
 
-#### `npm run bootstrap`
+#### `yarn bootstrap`
 
 > Installs package dependencies and links packages together - using lerna
 
-#### `npm run publish`
+#### `yarn run publish`
 
 > Push a release to git and npm
 > will ask for version in interactive mode - using lerna.
 
-#### `npm run lint`
+#### `yarn lint`
 
 > boolean check if code conforms to linting rules - uses remark & eslint
 
--   `npm run lint:js` - will check js
--   `npm run lint:md` - will check markdown + code samples
+-   `yarn lint:js` - will check js
+-   `yarn lint:md` - will check markdown + code samples
 
--   `npm run lint:js -- --fix` - will automatically fix js
--   `npm run lint:md -- -o` - will automatically fix markdown
+-   `yarn lint:js --fix` - will automatically fix js
 
-#### `npm run test`
+#### `yarn test`
 
 > boolean check if unit tests all pass - uses jest
 
--   `npm run test:watch` - will run tests in watch-mode
+-   `yarn test:watch` - will run tests in watch-mode
 
 ### Backers
 
